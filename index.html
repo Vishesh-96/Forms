@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;1,700&family=Oswald:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <form action="/" method="GET">
+        <label for="username">Your Name</label>
+        <input type="text" name="user-name" id="username" required />
+
+        <label for="usermessage">Your message</label>
+        <textarea id="usermessage"></textarea>
+        <label for="useremail">Your email address</label>
+        <input type="email" name="user-email" id="useremail" required/>
+        <label type="userage">Your Age</label>
+        <input type="number" name="user-age" id="userage" required />
+        <label for="userpassword">Your password</label>
+        <input type="password" name="user-password" id="userpassword" required minlength="7"/>
+        <label for="birthdate">Your birthdate</label>
+        <input type="date" name="birth-date" id="birthdate" required min="1921-01-01" max="2003-01-01">
+        <hr>
+        <label for="favorite-color">Your favorite color ?</label>
+        <select id="favorite-color">
+            <option>Blue</option>
+            <option>Black</option>
+            <option>Red</option>
+        </select>
+        <h2>How should we verify your account?</h2>
+        <div class="form-inline">
+            <input type="radio" name="verify" id="verify-text-message" value="text"/>
+            <label for="verify-text-message">Via text message (SMS)</label>
+        </div>
+        <div class="form-inline">
+            <input type="radio" name="verify" id="verify-phone" value="phone"/>
+            <label for="verify-phone">Via a phone call</label>
+        </div>
+        <div class="form-inline">
+            <input type="radio" name="verify" id="verify-email" value="email"/>
+            <label for="verify-email">Via an email</label>
+        </div>
+        <div class="form-inline">
+            <input type="checkbox" id="agree-terms" value="terms"/>
+            <label for="agree-terms">Agree to terms?</label>
+        </div>
+        <div class="form-inline">
+            <input type="checkbox" id="contact-email" value="email"/>
+            <label for="contact-email">Contact me via email</label>
+        </div>
+        <div class="form-inline">
+            <input type="checkbox" id="contact-phone" value="phone"/>
+            <label for="contact-phone">Contact me via email</label>
+        </div>
+        <button>Save</button>
+    </form>
+</body>
+
+</html>
